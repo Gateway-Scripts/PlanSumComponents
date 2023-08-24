@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanSumComponentsAP", "PlanSumComponentsAP.csproj", "{58D25140-CE97-4B94-A84A-566862CEBBBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58D25140-CE97-4B94-A84A-566862CEBBBE}.Debug|x64.ActiveCfg = Debug|x64
+		{58D25140-CE97-4B94-A84A-566862CEBBBE}.Debug|x64.Build.0 = Debug|x64
+		{58D25140-CE97-4B94-A84A-566862CEBBBE}.Release|x64.ActiveCfg = Release|x64
+		{58D25140-CE97-4B94-A84A-566862CEBBBE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4837A39F-B71D-4C16-A7CB-562D2FE88462}
+	EndGlobalSection
+EndGlobal

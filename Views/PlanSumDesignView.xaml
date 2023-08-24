@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="PlanSumComponentsAP.Views.PlanSumDesignView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlanSumComponentsAP.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="#1E5288">
+    <Grid>
+        <StackPanel Margin="20">
+            <CheckBox Content="Plan Id" IsChecked="{Binding bPlanId}" IsEnabled="False" Foreground="White" FontWeight="Bold" Margin="2"/>
+            <CheckBox Content="Operation" IsChecked="{Binding bOperation}" Foreground="White" FontWeight="Bold" Margin="2"/>
+            <CheckBox Content="Weight" IsChecked="{Binding bWeight}" Foreground="White" FontWeight="Bold" Margin="2"/>
+            <CheckBox IsChecked="{Binding bMaxDose}" Foreground="White" FontWeight="Bold" Margin="2">
+                <TextBlock>
+                   <Run Text="Max Dose Contribution"/>
+                    <Run Text="(only applicable if all plans use same structure set)" FontSize="10" FontStyle="Italic"/>
+                </TextBlock>
+            </CheckBox>
+        </StackPanel>
+    </Grid>
+</UserControl>
