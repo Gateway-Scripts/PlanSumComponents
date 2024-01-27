@@ -17,28 +17,24 @@ namespace PlanSumComponentsAP.ViewModels
         public class PlanSumViewModel
         {
             private bool _bPlanId;
-
             public bool bPlanId
             {
                 get { return _bPlanId; }
                 set { _bPlanId = value; }
             }
             private bool _bWeight;
-
             public bool bWeight
             {
                 get { return _bWeight; }
                 set { _bWeight = value; }
             }
             private bool _bOperation;
-
             public bool bOperation
             {
                 get { return _bOperation; }
                 set { _bOperation = value; }
             }
             private bool _bMaxDose;//private backing field
-
             public bool bMaxDose //public property
             {
                 get { return _bMaxDose; }
@@ -46,14 +42,14 @@ namespace PlanSumComponentsAP.ViewModels
             }
             public PlanSumViewModel()
             {
-
             }
             public void SetDefaults()
             {
                 bPlanId = true;
             }
         }
-        //this class is going to be the data that saves back to the XML file. (To be stored in the Data property of DesignTimeDetails). 
+        //this class is going to be the data that saves back to the XML file.
+        //(To be stored in the Data property of DesignTimeDetails). 
         public class PlanSumDetails
         {
             public bool bPlanId { get; set; }
@@ -61,6 +57,7 @@ namespace PlanSumComponentsAP.ViewModels
             public bool bOperation { get; set; }
             public bool bMaxDose { get; set; }
         }
+        
         //this class is going to communicate with Visual Scripting by inheriting IDesignTimeDetails
         public class PlanSumDesignTimeDetails : IDesignTimeDetails
         {

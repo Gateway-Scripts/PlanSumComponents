@@ -20,18 +20,11 @@
                 <ColumnDefinition Width="{Binding WeightColWidth}"/>
                 <ColumnDefinition Width="{Binding MaxColWidth}"/>
             </Grid.ColumnDefinitions>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" HorizontalAlignment="Stretch">
-                <TextBlock FontWeight="Bold" Text="Plan Id"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Grid.Column="1" HorizontalAlignment="Stretch">
-                <TextBlock FontWeight="Bold" Text="Operation"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Grid.Column="2" HorizontalAlignment="Stretch">
-                <TextBlock FontWeight="Bold" Text="Weight"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Grid.Column="3" HorizontalAlignment="Stretch">
-                <TextBlock FontWeight="Bold" Text="Max Dose Contribution"/>
-            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,0,0,2" HorizontalAlignment="Stretch" Grid.ColumnSpan="4"/>
+            <TextBlock FontWeight="Bold" Text="Plan Id"/>
+            <TextBlock FontWeight="Bold" Text="Operation"/>
+            <TextBlock FontWeight="Bold" Text="Weight"/>
+            <TextBlock FontWeight="Bold" Text="Max Dose Contribution"/>
         </Grid>
         <ItemsControl Grid.Row="2" ItemsSource="{Binding SumPlans}" Margin="20,0,0,0">
             <ItemsControl.ItemTemplate>
@@ -43,18 +36,11 @@
                             <ColumnDefinition Width="{Binding WeightColWidth}"/>
                             <ColumnDefinition Width="{Binding MaxColWidth}"/>
                         </Grid.ColumnDefinitions>
-                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" HorizontalAlignment="Stretch">
-                            <TextBlock Text="{Binding PlanId}"/>
-                        </Border>
-                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <TextBlock Text="{Binding Operation}"/>
-                        </Border>
-                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="2" HorizontalAlignment="Stretch">
-                            <TextBlock Text="{Binding Weight}"/>
-                        </Border>
-                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" Grid.Column="3" HorizontalAlignment="Stretch">
-                            <TextBlock Text="{Binding MaxDoseContribution}"/>
-                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" HorizontalAlignment="Stretch" Grid.ColumnSpan="4"/>
+                        <TextBlock Text="{Binding PlanId}"/>
+                        <TextBlock Text="{Binding Operation}"/>
+                        <TextBlock Text="{Binding Weight}"/>
+                        <TextBlock Text="{Binding MaxDoseContribution}"/>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
